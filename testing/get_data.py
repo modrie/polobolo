@@ -12,7 +12,7 @@ curname = currencies.keys()
 
 # download history for BTC currencies
 for currency in curname:
-    r = requests.get('https://poloniex.com/public?command=returnChartData&currencyPair=BTC_%s&start=1487035224&end=9999999999&period=300' % currency)
+    r = requests.get('https://poloniex.com/public?command=returnChartData&currencyPair=BTC_%s&start=1497559748&end=9999999999&period=300' % currency)
     if len(r.content)==34:
         continue
     with open('currencies/BTC_%s.json' % currency, 'w') as f:

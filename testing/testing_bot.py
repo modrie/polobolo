@@ -28,4 +28,11 @@ for f in flist:
     fn = os.path.splitext(f)[0]
     current_times[fn] = master[fn][0]['date']
 
-print current_times
+# print current_times
+# value_history =
+
+# loop through all times
+time = current_times['BTC_XMR']
+print(master['BTC_XMR'][0])
+
+#for i in range(300):
